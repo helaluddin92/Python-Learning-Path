@@ -50,6 +50,9 @@ ran = int(input("Enter range that you want to divide: "))
 for n in range(1, ran+1):
     if n % num == 0:
         print(n)
+    else:
+        print("No number found in the range that divided by {0}".format(num))
+        break
 
 # >>---------------------> Q & A 5 <-------------------------<<
 # Read Two Numbers and Print Quotient and Remainder
