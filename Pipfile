@@ -6,7 +6,12 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-venv = "*"
+requests = "*"
+update = "*"
+lock = "*"
+requests-html = "*"
+bs4 = "*"
+pandas = "*"
 
 [requires]
 python_version = "3.8"
