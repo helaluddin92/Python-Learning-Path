@@ -16,9 +16,7 @@ print("The average of the number is ", average)
 # >>---------------------> Q & A 2 <-------------------------<<
 # Write a program that will subtract the number from the sum and the result of the two numbers.
 
-def subtract_of_sum(x, y):
-    a = (x+y)+(x-y)
-    b = (x+y)-(x-y)
+def subtract_of_sum(a, b):
     num1 = a/2
     num2 = b/2
     print(f"The numbers are {num1} & {num2}")
@@ -46,8 +44,9 @@ print(rev)
 # Write a program that will subtract all the numbers that are divisible by all the numbers in the sleeper.
 
 num = int(input("Enter a number: "))
-ran = int(input("Enter range that you want to divide: "))
-for n in range(1, ran+1):
+start = int(input("Starting point: "))
+end = int(input("Ending Point"))
+for n in range(start, end+1):
     if n % num == 0:
         print(n)
     else:
@@ -59,10 +58,7 @@ for n in range(1, ran+1):
 
 
 def quotient_and_reminder(num1, num2):
-    if num1 > num2:
-        return f"The quotient of two number is {num1//num2} and reminder is {num1%num2}"
-    else:
-        return f"The quotient of two number is {num2//num1} and reminder is {num2%num1}"
+    return f"The quotient of two number is {num1//num2} and reminder is {num1 % num2}"
 
 
 num1 = int(input("Enter first number: "))
@@ -89,16 +85,30 @@ print(sum_num)
 
 
 number = int(input("Enter a number: "))
+
 if number > 1:
     for i in range(2, number):
         if number % i == 0:
             print(f"{number} is not a prime number")
             break
-        else:
-            print(f"{number} is a prime number")
-            break
+    else:
+        print(f"{number} is a prime number")
 else:
     print(f"{number} is not a prime number")
+
+# >>---------------> Q & A 7 Another way <------------------<<
+
+number = int(input("Enter a number: "))
+if number == 2:
+    print("Your given number is prime")
+elif number > 2:
+    for n in range(3, number):
+        if number % n == 0:
+            x = number//2
+            print("The given number is not prime")
+            exit()
+    else:
+        print("The given number is prime")
 
 
 # >>---------------------> Q & A 8 <-------------------------<<
