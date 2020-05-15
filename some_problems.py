@@ -17,8 +17,8 @@ print("The average of the number is ", average)
 # Write a program that will subtract the number from the sum and the result of the two numbers.
 
 def subtract_of_sum(a, b):
-    num1 = a/2
-    num2 = b/2
+    num1 = (a+b)/2
+    num2 = (a-b)/2
     print(f"The numbers are {num1} & {num2}")
 
 
