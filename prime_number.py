@@ -20,3 +20,10 @@ def prime_number(num):
 result = prime_number(100)
 print(result)
 print("Total Prime Number From 1 to 100 is", len(result))
+
+
+def function(leader, *other):
+    print(leader)
+
+
+function(leader="Helal", ["Helal", "Kausar", "Humam", "Bijoy"])

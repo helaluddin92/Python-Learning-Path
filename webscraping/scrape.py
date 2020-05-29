@@ -47,5 +47,5 @@ if len(r_table) > 0:
 print(header_names)
 print(table_data)
 
-df = pd.DataFrame(table_data, columns=header_names)
-df.to_csv('webscraping/movies.csv', index=False)
+# df = pd.DataFrame(table_data, columns=header_names)
+# df.to_csv('webscraping/movies.csv', index=False)

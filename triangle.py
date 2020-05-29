@@ -33,3 +33,4 @@ s = (a + b + c)/2
 
 area = (s*(s-a)*(s-b)*(s-c)) ** .5
 print("The area of the triangle is %.3f" % area)
+

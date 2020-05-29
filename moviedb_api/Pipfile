@@ -7,10 +7,6 @@ verify_ssl = true
 
 [packages]
 requests = "*"
-update = "*"
-lock = "*"
-requests-html = "*"
-bs4 = "*"
 pandas = "*"
 
 [requires]
